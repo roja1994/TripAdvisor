@@ -1,0 +1,8 @@
+com\ta\genericlib\BaseTest.class
+com\ta\genericlib\FileLibUtils.class
+com\ta\pages\TripAdvisorReviewPage.class
+com\ta\pages\TripAdvisorWriteReviewPage.class
+com\ta\genericlib\IAutoConstant.class
+com\ta\pages\TripAdvisorListPage.class
+com\ta\pages\TripAdvisorHomePage.class
+com\ta\genericlib\WebDriverLib.class
