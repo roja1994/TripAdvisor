@@ -35,6 +35,15 @@ public class TripAdvisorWriteReviewPage {
 	@FindBy(id = "qid190_bubbles")
 	private WebElement sleepQualityRating;
 	
+	@FindBy(xpath = "(//span[contains(@id,'_bubbles')])[1]")
+	private WebElement rating1;
+	
+	@FindBy(xpath = "(//span[contains(@id,'_bubbles')])[2]")
+	private WebElement rating2;
+	
+	@FindBy(xpath = "(//span[contains(@id,'_bubbles')])[3]")
+	private WebElement rating3;
+	
 	@FindBy(id = "SUBMIT")
 	private WebElement submitYourReview;
 	
@@ -105,25 +114,34 @@ public class TripAdvisorWriteReviewPage {
 		reviewTitle.sendKeys(tit);
 		textArea.sendKeys(info);
 		tripType.click();
-		wdl.select(selectMonth, 3);
-		shoeshineServices.click();
-		cleanHotel.click();
-		modernHotel.click();
-		interstingTheme.click();
-		goodLocation.click();
-		safe.click();
+		wdl.select(selectMonth, 2);
+//		shoeshineServices.click();
+//		cleanHotel.click();
+//		modernHotel.click();
+//		interstingTheme.click();
+//		goodLocation.click();
+//		safe.click();
 		if(homeRating.isDisplayed()) {
-			if(serviceRating.isDisplayed())
-				rating(serviceRating);
-			if(valueRating.isDisplayed())
-				rating(valueRating);
-			
-			if(cleanlinessRating.isDisplayed())
-				rating(cleanlinessRating);
-			
-			if(sleepQualityRating.isDisplayed())
-			rating(sleepQualityRating);
+//			if(serviceRating.isDisplayed())
+//				rating(serviceRating);
+//			if(valueRating.isDisplayed())
+//				rating(valueRating);
+//			
+//			if(cleanlinessRating.isDisplayed())
+//				rating(cleanlinessRating);
+//			
+//			if(sleepQualityRating.isDisplayed())
+//			rating(sleepQualityRating);
+//			
+			if(rating1.isDisplayed())
+				rating(rating1);
+			if(rating2.isDisplayed())
+				rating(rating2);	
+			if(rating3.isDisplayed())
+				rating(rating3);
 		}
+		
+
 		budget.click();
 		roomtip.sendKeys("No Need to give");
 		submitCB.click();
